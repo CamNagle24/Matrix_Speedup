@@ -1,0 +1,88 @@
+                           _____________________
+
+                            PROJECT 3 QUESTIONS
+                           _____________________
+
+Project Instructions
+================
+
+    The following questions assume you have completed the code and will ask you
+    about what you observed. The questions are essay style and will be manually
+    graded. You should write at most one paragraph (roughly 3 to 5 sentences)
+    for each question that asks for an explanation. For the question that asks
+    you to calculate cache misses, you must show all of your work.
+
+
+1. CACHES AND CACHE MISSES
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+According to the "lscpu" command run on a Keller Hall 1-262 machine, the L1
+cache of a Keller 1-262 machine is 128 kilobytes (where 1 kilobyte = 1024
+bytes). Assume the cache has a 64-byte block size.
+
+Suppose we are running a C program on one of the Keller 1-262 machines that
+features an int array with 262,144 elements. Assume the array is aligned to the
+L1 cache's block size (i.e., the array's starting address is a multiple of 64).
+Our program performs a linear search over the array for a value that is not
+stored in the array.
+
+How many cache misses occur during this search? You should ignore the loop
+variable (e.g., "int i"). Make sure to show your work.
+
+L1 cahce size: 128 kilobytes
+64-byte block size
+int array with 262,144 elements
+
+We know that with a 64 byte block size and each integar is 4 bytes each block can hold 16 ints
+
+262,144 elements / 16 ints = 16,384 total blocks of data in the array
+
+Each block is 64 bytes and the cache is 128 kilobytes we can fit
+128 kilobytes / 64 bytes = 2,048 blocks
+
+so 2,048 blocks can be stored in the chache at a time
+During the linear search, each access to an element in the array 
+will result in loading a block into the cache if it's not already there.
+
+The number of cache misses during the search will be:
+Total blocks - Blocks that can fit in the cache
+= 16,384 - 2,048
+= 14,336 cache misses
+
+
+2. WALL TIME AND CPU TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~
+In the 'matrix_main.c', we measure both the CPU and wall time required for the
+functions to run. What is the difference between these two types of time
+measurement? When might we be interested in the wall time? CPU time? Which
+makes more sense to use for what we care about in this project?
+
+CPU time is the time that a CPU spends to execute the instructions for a task you want to do.
+
+Wall time is the amount of real time that has passed in the world.
+From the start to the end of the task you want to do. It includes all the other time besides the CPU
+like time delays from anything else.
+
+We are interested in the wall time if we want to see how the program does overall in the real world.
+
+We are interested in the CPU time if we want to see how the computational effeciency of just your program is.
+No external factors just the program.
+
+It makes more sense for us to do CPU time for this project. We just want to see how the program runs not any external factors
+just how I made it more efficient. Specifically to get the 6 times or 2 times runtime.
+
+
+3. LINEAR SEARCH 3-TIMES
+~~~~~~~~~~~~~~~~~~~~~~~~
+This question refers to the work you did in Lab 8. Refer back to this lab as
+needed to answer this question.
+
+We asked you to improve upon a provided version of the function "list_find".
+Why was the provided version inefficient? How did your improved version compare
+to performing the same search using an array instead of a linked list? Why do
+you think this is?
+
+The provided version was inefficient because it called list_get with the index it was on.
+list_get then traversed the whole linked list until it got to that index. list_get goes through the linked list every time
+which is very inneficient. The improved version using an array instead of a linked list is faster for accessing elements.
+That takes O(1) time because of direct indexing verses linked list you have to traerse through the list from begening til the end.
+Which would take O(n) time. This is because arrays allocate contiguous blocks of memory vs linked list have nodes scattered in memory.

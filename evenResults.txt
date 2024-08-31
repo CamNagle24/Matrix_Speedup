@@ -1,0 +1,21 @@
+Setting up random matrix...
+Contents of results array: {13860076487, 13860432496, 13860434039, 13859691654, 13859694892}
+CPU time for control implementation: 2.475 sec.
+Wall time for control implementation: 2.475 sec.
+
+Contents of results array: {13860076487, 13860432496, 13860434039, 13859691654, 13859694892}
+CPU time for student implementation: 0.385 sec.
+Wall time for student implementation: 0.385 sec.
+
+Ratio of control speed to student speed (get_every_fifth): 6.437003
+
+Sum of all elements in the array: 69300329568
+CPU time for control implementation: 0.769 sec.
+Wall time for control implementation: 0.770 sec.
+
+Sum of all elements in the array: 69300329568
+CPU time for student implementation: 0.372 sec.
+Wall time for student implementation: 0.372 sec.
+
+Ratio of control speed to student speed (get_every): 2.069098
+
