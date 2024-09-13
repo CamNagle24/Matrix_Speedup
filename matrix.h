@@ -1,4 +1,4 @@
-#ifndef MATRX_H
+#ifndef MATRIX_H
 #define MATRIX_H
 
 #define MGET(mat, i, j) ((mat)->data[((i)*((mat)->ncols)) + (j)])

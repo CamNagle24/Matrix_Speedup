@@ -1,0 +1,23 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     matmul_main
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _get_elapsed_time_sec, symObjAddr: 0x0, symBinAddr: 0x100001370, symSize: 0x30 }
+  - { offsetInCU: 0x8F, offset: 0x8F, size: 0x8, addend: 0x0, symName: _get_elapsed_time_sec, symObjAddr: 0x0, symBinAddr: 0x100001370, symSize: 0x30 }
+  - { offsetInCU: 0xBB, offset: 0xBB, size: 0x8, addend: 0x0, symName: _validate_results, symObjAddr: 0x30, symBinAddr: 0x1000013A0, symSize: 0xE0 }
+  - { offsetInCU: 0x232, offset: 0x232, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x110, symBinAddr: 0x100001480, symSize: 0x2C4 }
+  - { offsetInCU: 0x26, offset: 0x604, size: 0x8, addend: 0x0, symName: _get_every_fifth, symObjAddr: 0x0, symBinAddr: 0x100001750, symSize: 0x80 }
+  - { offsetInCU: 0x33, offset: 0x611, size: 0x8, addend: 0x0, symName: _get_every_fifth, symObjAddr: 0x0, symBinAddr: 0x100001750, symSize: 0x80 }
+  - { offsetInCU: 0xB6, offset: 0x694, size: 0x8, addend: 0x0, symName: _get_every, symObjAddr: 0x80, symBinAddr: 0x1000017D0, symSize: 0x70 }
+  - { offsetInCU: 0x126, offset: 0x704, size: 0x8, addend: 0x0, symName: _initialize_results, symObjAddr: 0xF0, symBinAddr: 0x100001840, symSize: 0x20 }
+  - { offsetInCU: 0x166, offset: 0x744, size: 0x8, addend: 0x0, symName: _set_up_random_matrix, symObjAddr: 0x110, symBinAddr: 0x100001860, symSize: 0xC0 }
+  - { offsetInCU: 0x239, offset: 0x817, size: 0x8, addend: 0x0, symName: _set_up_zero_matrix, symObjAddr: 0x1D0, symBinAddr: 0x100001920, symSize: 0x40 }
+  - { offsetInCU: 0x27C, offset: 0x85A, size: 0x8, addend: 0x0, symName: _free_matrix, symObjAddr: 0x210, symBinAddr: 0x100001960, symSize: 0xE }
+  - { offsetInCU: 0x26, offset: 0x8F9, size: 0x8, addend: 0x0, symName: _get_every_fifth_student, symObjAddr: 0x0, symBinAddr: 0x100001970, symSize: 0x140 }
+  - { offsetInCU: 0x33, offset: 0x906, size: 0x8, addend: 0x0, symName: _get_every_fifth_student, symObjAddr: 0x0, symBinAddr: 0x100001970, symSize: 0x140 }
+  - { offsetInCU: 0x116, offset: 0x9E9, size: 0x8, addend: 0x0, symName: _get_every_student, symObjAddr: 0x140, symBinAddr: 0x100001AB0, symSize: 0xBA }
+  - { offsetInCU: 0x26, offset: 0xB2A, size: 0x8, addend: 0x0, symName: _matmul, symObjAddr: 0x0, symBinAddr: 0x100001B70, symSize: 0x103 }
+  - { offsetInCU: 0x33, offset: 0xB37, size: 0x8, addend: 0x0, symName: _matmul, symObjAddr: 0x0, symBinAddr: 0x100001B70, symSize: 0x103 }
+  - { offsetInCU: 0x26, offset: 0xC60, size: 0x8, addend: 0x0, symName: _matmul_student, symObjAddr: 0x0, symBinAddr: 0x100001C80, symSize: 0x184 }
+  - { offsetInCU: 0x33, offset: 0xC6D, size: 0x8, addend: 0x0, symName: _matmul_student, symObjAddr: 0x0, symBinAddr: 0x100001C80, symSize: 0x184 }
+...
