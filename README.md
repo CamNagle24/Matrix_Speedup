@@ -25,7 +25,7 @@ I had to use things like loop unrolling, nested loops, row-major ordering to com
 
 I also had to do a speedup ratio on summing all the elements in a matrix and returning the result, as well as multiplying 2 matrices and returning the resulting matrix.
 
-## <a href="https://www.youtube.com/watch?v=UNz9k9E9IWM"> Demo Video on YouTube </a>
+## <a href="https://youtu.be/veNB-O33NoU"> Demo Video on YouTube </a>
 
 ## Setup
 
